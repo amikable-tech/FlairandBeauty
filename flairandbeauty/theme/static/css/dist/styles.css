@@ -709,6 +709,7 @@ select {
   position: static;
 }
 
+<<<<<<< HEAD
 .sticky {
   position: sticky;
 }
@@ -760,6 +761,8 @@ select {
   padding: 1rem;
 }
 
+=======
+>>>>>>> 37e74380aaef123f3515caf8f5e70adb5bb39893
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -774,15 +777,19 @@ select {
   font-weight: 700;
 }
 
+<<<<<<< HEAD
 .font-medium {
   font-weight: 500;
 }
 
+=======
+>>>>>>> 37e74380aaef123f3515caf8f5e70adb5bb39893
 .text-red-700 {
   --tw-text-opacity: 1;
   color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 
+<<<<<<< HEAD
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -803,3 +810,8 @@ select {
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
+=======
+.underline {
+  text-decoration-line: underline;
+}
+>>>>>>> 37e74380aaef123f3515caf8f5e70adb5bb39893
