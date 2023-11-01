@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     'django_browser_reload',
     'tailwind',
     'theme',
+    'crispy_forms',
+    'tempus_dominus',
+
     
 ]
 
