@@ -48,7 +48,6 @@ INSTALLED_APPS = [
     'tempus_dominus',
     'bootstrap4',
 
-    
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'

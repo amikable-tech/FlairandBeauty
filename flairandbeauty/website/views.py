@@ -10,7 +10,7 @@ def jobs(request):
     return render(request, "main/jobs.html")
 
 def team(request):
-    return render(request, "main/jobs.html")
+    return render(request, "main/team.html")
 
 def booking(request):	
 	submitted = False
@@ -23,4 +23,4 @@ def booking(request):
 		booking_form = BookingForm()
 		if 'submitted' in request.GET:
 			submitted = True
-	return render (request, 'booking.html', { 'booking_form': booking_form, 'submitted': submitted }) 
+	return render (request, 'templates/booking.html', { 'booking_form': booking_form, 'submitted': submitted }) 
