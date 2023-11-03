@@ -46,9 +46,12 @@ INSTALLED_APPS = [
     'theme',
     'crispy_forms',
     'tempus_dominus',
+    'bootstrap4',
 
     
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TAILWIND_APP_NAME = 'theme'
 
@@ -134,8 +137,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = 'static/js/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/js/')
+
+
 
 
 # Default primary key field type

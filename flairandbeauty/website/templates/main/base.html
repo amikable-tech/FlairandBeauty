@@ -1,0 +1,36 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <br>
+    <title>{% block title%} Home page {% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+  	
+  </head>
+  <body>
+
+    {% include 'main/navbar.html' %}
+
+    <div>
+    {% if messages %}
+      {% for message in messages %}
+
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                  {{ message }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {% endfor %}
+
+    {% endif %}
+    {% block content %}
+
+    {% endblock %}
+
+
+    </div>
+  </body>
+</html>

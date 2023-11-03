@@ -1,0 +1,63 @@
+{% extends 'main/base.html' %}
+
+{% load crispy_forms_tags %}
+
+
+{% block title %} Booking form {% endblock %}
+
+{% block content %}
+
+  <h3> Welcome, Please fill all details with the accurate information</h3>
+  <br/><br/>
+
+  
+
+	{% if submitted %}
+          <div class="alert alert-success mt-3">
+      Your appointment request has been submitted successfully!
+      <a href="{% url 'booking_success' %}">Go to booking success page</a>
+    {% else %}
+  
+
+<div class="container">
+		<div class="row">
+			<div class="col">
+		
+	  
+		        <form action="" method="POST">
+
+	            {% csrf_token %}
+
+	            {{ booking_form|crispy }}
+
+	            {{ booking_form.media }}
+
+
+
+
+	            <input type="submit" value="Submit" class="btn btn-secondary">
+
+	            </form>	
+	{% endif %}
+
+	
+
+            {% if booking_form.errors %}
+              <div class="alert alert-danger mt-3">
+                <strong>Error:</strong> Please correct the following errors.
+                <ul>
+                  {% for field in booking_form %}
+                    {% if field.errors %}
+                      <li>{{ field.label }}: {{ field.errors|join:", " }}</li>
+  
+                  {% endif %}
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endif %}
+          
+      </div>
+    </div>
+  </div>
+{% endblock %}
+

@@ -1,0 +1,110 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flair and Beauty Saloon</title>
+{% tailwind_css %}
+
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+    <header class = "bg-orange-200 text-black sticky top-0 z-10">
+       
+    <section class= "max-w-4xl mx-auto p-2 flex justify-between items-center">
+            <h1 class="text-2xl font-"> <a href="#hero"> 💇 Flair & beauty Saloon</a>
+            </h1>
+            <div>
+                <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">
+                
+                    <div
+                      class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
+                    </div>
+                  </button>
+                  <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
+                    <a href="#Booking" class="w-full py-6 text-center hover:opacity-90">Booking</a>
+                    <a href="#About Us" class="w-full py-6 text-center hover:opacity-90">About Us</a>
+                    <a href="#Services" class="w-full py-6 text-center hover:opacity-90">Services</a>
+                    <a href="#Team" class="w-full py-6 text-center hover:opacity-90">Team</a>
+                    <a href="#Products" class="w-full py-6 text-center hover:opacity-90">Products</a>
+                    <a href="#Studio" class="w-full py-6 text-center hover:opacity-90">Studio</a>
+                    <a href="#Testimonials" class="w-full py-6 text-center hover:opacity-90">Testimonials</a>
+                    <a href="#Jobs" class="w-full py-6 text-center hover:opacity-90">Jobs and Vacancies</a>
+                    <a href="#Contact" class="w-full py-6 text-center hover:opacity-90">Contact</a>
+                  </nav>
+                </div>
+              </section>
+              <section id="mobile-menu"
+                class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl">
+                <button class="text-8xl self-end px-6" id="close-mobile-menu">
+                          &times;
+                      </button>
+                <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
+                
+                </nav>
+              </section>
+            </header>
+          
+
+   <!-- component -->
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+
+<footer class="relative bg-blueGray-200 pt-8 pb-6">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap text-left lg:text-left">
+      <div class="w-full lg:w-6/12 px-4">
+        <h4 class="text-3xl fonat-semibold text-blueGray-700">Let's keep in touch!</h4>
+        <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+          Follow us on our Social Media pages
+        </h5>
+        <div class="mt-6 lg:mb-0 mb-6">
+          <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-instagram"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-facebook-square"></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+
+          </button>
+        </div>
+      </div>
+      <div class="w-full lg:w-6/12 px-4">
+        <div class="flex flex-wrap items-top mb-6">
+          <div class="w-full lg:w-4/12 px-4 ml-auto">
+            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">About Us</a>
+              </li>
+              <li>
+            </ul>
+          </div>
+          <div class="w-full lg:w-4/12 px-4">
+            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other Resources</span>
+            <ul class="list-unstyled">
+             
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Terms &amp; Conditions</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Privacy Policy</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6 border-blueGray-300">
+    <div class="flex flex-wrap items-center md:justify-between justify-center">
+      <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+        
+      </div>
+    </div>
+  </div>
+</footer>  
+</body>
+</html>
+
+
