@@ -43,14 +43,14 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'django_browser_reload',
     'tailwind',
-    'theme',
     'crispy_forms',
     'tempus_dominus',
+    'bootstrap4',
 
-    
 ]
 
-TAILWIND_APP_NAME = 'theme'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 
 INTERNAL_IPS = [
     "127.0.0.1",
@@ -135,7 +135,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [
+
+os.path.join(BASE_DIR, '/home/chiamaka/Documents/Python_projects/Mia-San-Online/flairandbeauty/website/static')
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn')
 
 
 # Default primary key field type
