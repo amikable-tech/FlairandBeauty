@@ -1,102 +1,62 @@
-{% load static tailwind_tags %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flair and Beauty Saloon</title>
-{% tailwind_css %}
-
-<script src="../../static/js/main.ts"></script>
+    <title>Flair and Beauty Salon</title>
+    <link href="{% static 'src/dist/output.css' %}" rel="stylesheet">
+    <link href="{% static 'src/dist/styles.css' %}" rel="stylesheet">
 </head>
-<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
-    <header class = "bg-orange-200 text-black sticky top-0 z-10">
-       
-    <section class= "max-w-4xl mx-auto p-2 flex justify-between items-center">
-            <h1 class="text-2xl font-"> <a href="#hero"> 💇 Flair & beauty Saloon</a>
-            </h1>
-            <div>
-                <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">
-                
-                    <div
-                      class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
-                    </div>
-                  </button>
-                  <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
-                    <a href="#Booking" class="w-full py-6 text-center hover:opacity-90">Booking</a>
-                    <a href="#About Us" class="w-full py-6 text-center hover:opacity-90">About Us</a>
-                    <a href="#Services" class="w-full py-6 text-center hover:opacity-90">Services</a>
-                    <a href="#Team" class="w-full py-6 text-center hover:opacity-90">Team</a>
-                    <a href="#Products" class="w-full py-6 text-center hover:opacity-90">Products</a>
-                    <a href="#Studio" class="w-full py-6 text-center hover:opacity-90">Studio</a>
-                    <a href="#Testimonials" class="w-full py-6 text-center hover:opacity-90">Testimonials</a>
-                    <a href="#Jobs" class="w-full py-6 text-center hover:opacity-90">Jobs and Vacancies</a>
-                    <a href="#Contact" class="w-full py-6 text-center hover:opacity-90">Contact</a>
-                  </nav>
+<body>
+  <div class="HomeScreenEn" style="width: 100%; height: 100%; position: relative; background: white; border: 1.15px solid">
+    
+    <div class="Rectangle41" style="width: 312.24px; height: 336.35px; left: 447.70px; top: 103.32px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; background: #FDF1E9; border-top-left-radius: 107.64px"></div>
+    <div class="Frame2" style="padding-left: 45.92px; padding-right: 45.92px; padding-top: 13.78px; padding-bottom: 13.78px; left: 66.43px; top: 680.90px; position: absolute; background: #292D32; box-shadow: 1.1479592323303223px 3.443877696990967px 10.331632614135742px rgba(0, 0, 0, 0.30); border-radius: 8.04px; overflow: hidden; justify-content: center; align-items: center; gap: 11.48px; display: inline-flex">
+        <div class="BookAnAppointment" style="text-align: center"><span style="color: white; font-size: 20.66px; font-family: Brush Script MT; font-weight: 400; word-wrap: break-word">Book an appointment</span><span style="color: black; font-size: 20.66px; font-family: Brush Script MT; font-weight: 400; word-wrap: break-word"> </span></div>
+    </div>
+    <div class="Group3" style="width: 359.31px; height: 234.18px; left: 49.36px; top: 153.83px; position: absolute">
+        <div class="Rectangle15" style="width: 359.31px; height: 225px; left: 0px; top: 9.18px; position: absolute; border-top-left-radius: 67.65px; border: 1.35px black solid"></div>
+        <img class="Rectangle16" style="width: 251.66px; height: 224.60px; left: 13.53px; top: 0px; position: absolute; border-top-left-radius: 67.65px" src="https://via.placeholder.com/252x225" />
+        <img class="Rectangle16" style="width: 336.86px; height: 224.60px; left: 13.53px; top: 0px; position: absolute; border-top-left-radius: 73.06px" src="../../static/img/Photo without frame.png" />
+    </div>
+    <div class="Rectangle41" style="width: 100%; height: 100%; transform: rotate(180deg); transform-origin: 0 0; background: #FDF1E9; border-top-left-radius: 107.64px"></div>
+    <div class="Frame239" style="padding-left: 35px; padding-right: 35px; padding-top: 5px; padding-bottom: 5px; left: 19px; top: 470.04px; position: absolute; flex-direction: column; justify-content: center; align-items: center; gap: 22px; display: inline-flex">
+        <div class="HairWithFlair" style="color: black; font-size: 32.14px; font-family: Brush Script MT; font-weight: 400; word-wrap: break-word">Hair with flair</div>
+        <div class="WeOfferExcellentServicesAndAwardWinningProductsInOurRelaxedAndComfortableMunichBasedStudio" style="width: 340px; text-align: center; color: black; font-size: 18.50px; font-family: Brush Script MT; font-weight: 400; word-wrap: break-word">We offer excellent services<br/>and award-winning products  in <br/>our  relaxed and comfortable <br/>Munich-based studio.</div>
+    </div>
+    <div class="Footer" style="width: 448.85px; height: 218.11px; left: -1px; top: 812px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
+        <div class="Group102" style="width: 448.85px; height: 218.11px; position: relative">
+            <div class="Rectangle207" style="width: 448.85px; height: 218.11px; left: 0px; top: 0px; position: absolute; background: #292D32"></div>
+            <div class="Group101" style="width: 379.97px; height: 166.23px; left: 41.33px; top: 1.15px; position: absolute">
+                <div class="Frame13" style="width: 236.48px; height: 17px; left: 75.77px; top: 149.23px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 14.92px; display: inline-flex">
+                    <div class="Impressum" style="width: 99.87px; text-align: center; color: white; font-size: 13.78px; font-family: Montserrat; font-weight: 500; text-decoration: underline; word-wrap: break-word">Impressum</div>
+                    <div class="Datenschutz" style="width: 121.68px; text-align: center; color: white; font-size: 13.78px; font-family: Montserrat; font-weight: 500; text-decoration: underline; word-wrap: break-word">Datenschutz</div>
                 </div>
-              </section>
-              <section id="mobile-menu"
-                class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl">
-                <button class="text-8xl self-end px-6" id="close-mobile-menu">
-                          &times;
-                      </button>
-                <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
-                
-                </nav>
-              </section>
-            </header>
-          
-   <!-- component -->
-<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
-<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
-
-<footer class="relative bg-blueGray-200 pt-8 pb-6">
-  <div class="container mx-auto px-4">
-    <div class="flex flex-wrap text-left lg:text-left">
-      <div class="w-full lg:w-6/12 px-4">
-        <h4 class="text-3xl fonat-semibold text-blueGray-700">Let's keep in touch!</h4>
-        <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
-          Follow us on our Social Media pages
-        </h5>
-        <div class="mt-6 lg:mb-0 mb-6">
-          <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i class="fab fa-instagram"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i class="fab fa-facebook-square"></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-
-          </button>
+                <div class="Frame16" style="width: 379.97px; height: 99.51px; left: 0px; top: 0px; position: absolute; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                    <div class="FlairBeauty" style="width: 223.68px; height: 93.77px; text-align: center"><span style="color: white; font-size: 19.94px; font-family: Giarek - Demo Version; font-weight: 400; word-wrap: break-word"><br/></span><span style="color: white; font-size: 34.99px; font-family: Giarek - Demo Version; font-weight: 400; word-wrap: break-word">flair     beauty<br/></span><span style="color: white; font-size: 39.88px; font-family: Giarek - Demo Version; font-weight: 400; word-wrap: break-word"><br/></span></div>
+                    <div class="HairStudioMunich2023" style="width: 379.97px; text-align: center; color: white; font-size: 13.78px; font-family: Montserrat; font-weight: 500; word-wrap: break-word">Hair Studio Munich, 2023</div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="w-full lg:w-6/12 px-4">
-        <div class="flex flex-wrap items-top mb-6">
-          <div class="w-full lg:w-4/12 px-4 ml-auto">
-            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
-            <ul class="list-unstyled">
-              <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">About Us</a>
-              </li>
-              <li>
-            </ul>
-          </div>
-          <div class="w-full lg:w-4/12 px-4">
-            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other Resources</span>
-            <ul class="list-unstyled">
-            
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Contact Us</a>
-              </li>
-            </ul>
-          </div>
+    </div>
+    <div class="Header" style="width: 448px; height: 104px; padding-left: 36.73px; padding-right: 36.73px; left: 0px; top: 0px; position: absolute; background: #F9DBCF; border-bottom: 0.23px solid; justify-content: flex-start; align-items: flex-end; gap: 129.72px; display: inline-flex">
+        <div class="Group54" style="width: 205.48px; height: 86.14px; position: relative">
+            <div class="FlairBeauty" style="width: 205.48px; height: 86.14px; left: 0px; top: 0px; position: absolute"><span style="color: black; font-size: 18.32px; font-family: Giarek - Demo Version; font-weight: 400; word-wrap: break-word"><br/></span><span style="color: black; font-size: 32.14px; font-family: Giarek - Demo Version; font-weight: 400; word-wrap: break-word">flair     beauty<br/></span><span style="color: black; font-size: 36.63px; font-family: Giarek - Demo Version; font-weight: 400; word-wrap: break-word"><br/></span></div>
         </div>
-      </div>
+        <div class="VuesaxLinearTextalignJustifycenter" style="width: 39.03px; height: 48.21px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+            <div class="TextalignJustifycenter" style="width: 39.03px; height: 48.21px; position: relative">
+                <div class="Vector" style="width: 29.27px; height: 0px; left: 4.88px; top: 9.04px; position: absolute; border: 2.25px #292D32 solid"></div>
+                <div class="Vector" style="width: 29.27px; height: 0px; left: 4.88px; top: 19.09px; position: absolute; border: 2.25px #292D32 solid"></div>
+                <div class="Vector" style="width: 29.27px; height: 0px; left: 4.88px; top: 29.13px; position: absolute; border: 2.25px #292D32 solid"></div>
+                <div class="Vector" style="width: 39.03px; height: 48.21px; left: 39.03px; top: 48.21px; position: absolute; transform: rotate(-180deg); transform-origin: 0 0; opacity: 0"></div>
+            </div>
+        </div>
     </div>
-    <hr class="my-6 border-blueGray-300">
-    <div class="flex flex-wrap items-center md:justify-between justify-center">
-      <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-        
-      </div>
-    </div>
-  </div>
-</footer>  
+</div>
+
+    <script src="{% static 'js/main.js' %}"></script>
 </body>
+
 </html>
-
-
